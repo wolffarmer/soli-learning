@@ -1,10 +1,10 @@
 ## Introduction
-The purpose is to build millimeter wave gesture recognition using Ti open board
+The purpose is to build millimeter wave gesture recognition using TI board
 
 ### Catalog description
 - ai_course : ai videos course for learning the basics of AI
 - config:     soli dataset config
-- evb:        learning when try to using ti-board to generate dataset instead of soli
+- evb:        learning when try to using TI board to generate dataset instead of soli
 - *.py      : python code for builindg ai models
 
 ### reference  paper info
@@ -72,17 +72,17 @@ For each run, a folder named by date and time will be created with a log file co
 
 ![Alt text](acc_epochs.png?raw=true "Title")
 
-## Step2: Gesture data acquisition based on Ti development board
+## Step2: Gesture data acquisition based on TI board
 Based on the data set collected by hardware, learn how to collect and label data
-- to be update
+- To be updated
 
-## Step3: Model training base on ti dataset
+## Step3: Model training base on TI dataset
 Replace the soli data set in the first step with the data set collected in the second step to train the offline AI model
-- to be update
+- To be updated
 
 ## Step4: Real time gesture detection
-Realization of real-time detection system on PC based on Ti development board
-- to be update
+Realization of real-time detection system on PC based on Ti board dataset
+- To be updated
 
 ## Reference items
 - https://github.com/sholevs66/Deep-Soli---Hand-Gesture-recognition
