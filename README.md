@@ -1,10 +1,13 @@
 ## Introduction
+The purpose is to build millimeter wave gesture recognition using Ti open board
+
+### Catalog description
 - ai_course : ai videos course for learning the basics of AI
 - config:     soli dataset config
 - evb:        learning when try to using ti-board to generate dataset instead of soli
 - *.py      : python code for builindg ai models
 
-## paper info
+### reference  paper info
 This is the open source evaluation code base of our paper:
 
 **Interacting with Soli: Exploring Fine-Grained Dynamic Gesture Recognition
@@ -12,10 +15,13 @@ in the Radio-Frequency Spectrum** <br />
 Saiwen Wang, Jie Song, Jamie Lien, Poupyrev Ivan, Otmar Hilliges <br />
 (link to the [paper](http://bit.ly/2ftSRcn))
 
-##  install python env  
+## Step1: Generate model with 
+Run the paper and training code based on Google soli dataset
+
+###  install python env  
  install python3.6 env with python package "torch matplotlib h5py" 
 
-## Data loading and preprocessing
+### Data loading and preprocessing
 
 - Download [dataset](https://polybox.ethz.ch/index.php/s/wG93iTUdvRU8EaT)
   (please let me know when the link doesn't work).
@@ -52,16 +58,29 @@ The preprocessing script **'data_pp_tools.load_data()'** loads and parse the dat
 
 The preprocessing script truncates the data points to equal length of 40 (as the authors mention in their paper). 33 & 23 sequences are droped from the training & validation sets respectivly as they have less than 40 samples.
 
-## Parameters
+### Parameters
 Basic parameters can bee seen at the bottom of **'train.py'** packed by parser.
 
-## Training
+### Training
 **'train.py'** will load and process the data as described above, and train a CNN-LSTM model.
 Predictions are calculated based only on the last hidden LSTM state. Training is done using Negative log loss using true labels. Run command for training with default configurations:
 
 `python train.py`
 
-## Logging
+### Logging
 For each run, a folder named by date and time will be created with a log file containing info about the parameters. Losses arrays, accuracy arrays, figures and the trained model are saved there as well.
 
 ![Alt text](acc_epochs.png?raw=true "Title")
+
+## Step2: Gesture data acquisition based on Ti development board
+Based on the data set collected by hardware, learn how to collect and label data
+- to be update
+
+## Step3: Model training base on ti dataset
+Replace the soli data set in the first step with the data set collected in the second step to train the offline AI model
+ - to be update
+
+## Step4: Real time gesture detection
+Realization of real-time detection system on PC based on Ti development board
+- to be update
+
