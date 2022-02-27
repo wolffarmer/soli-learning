@@ -15,7 +15,7 @@ in the Radio-Frequency Spectrum** <br />
 Saiwen Wang, Jie Song, Jamie Lien, Poupyrev Ivan, Otmar Hilliges <br />
 (link to the [paper](http://bit.ly/2ftSRcn))
 
-## Step1: Generate model with 
+## Step1: Model training base on soli dataset
 Run the paper and training code based on Google soli dataset
 
 ###  install python env  
@@ -78,9 +78,13 @@ Based on the data set collected by hardware, learn how to collect and label data
 
 ## Step3: Model training base on ti dataset
 Replace the soli data set in the first step with the data set collected in the second step to train the offline AI model
- - to be update
+- to be update
 
 ## Step4: Real time gesture detection
 Realization of real-time detection system on PC based on Ti development board
 - to be update
+
+## Reference items
+https://github.com/sholevs66/Deep-Soli---Hand-Gesture-recognition
+https://github.com/wolffarmer/deep-soli
 
