@@ -1,9 +1,4 @@
 ## Introduction
-origin code  dataset is using dataset base on soli hardware.
-we try to use mmware Ti-board to generate dataset for gesture-recognition.
+- fmwcw_2d_doppler.py  siginal 2d RV doppler map example code , you can process siginal link this 
+- ti-board.md          ti-board info for build self dataset base on ti evb-board instead of soli dataset 
 
-## ti board-info 
-
-## build dataset
-
-### labels

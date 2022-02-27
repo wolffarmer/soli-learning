@@ -1,5 +1,10 @@
 ## Introduction
+- ai_course : ai videos course for learning the basics of AI
+- config:     soli dataset config
+- evb:        learning when try to using ti-board to generate dataset instead of soli
+- *.py      : python code for builindg ai models
 
+## paper info
 This is the open source evaluation code base of our paper:
 
 **Interacting with Soli: Exploring Fine-Grained Dynamic Gesture Recognition
