@@ -85,6 +85,6 @@ Realization of real-time detection system on PC based on Ti development board
 - to be update
 
 ## Reference items
-https://github.com/sholevs66/Deep-Soli---Hand-Gesture-recognition
-https://github.com/wolffarmer/deep-soli
+- https://github.com/sholevs66/Deep-Soli---Hand-Gesture-recognition
+- https://github.com/wolffarmer/deep-soli
 
