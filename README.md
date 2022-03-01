@@ -7,7 +7,7 @@ The purpose is to build millimeter wave gesture recognition using TI board
 - evb:        learning when try to using TI board to generate dataset instead of soli
 - *.py      : python code for builindg ai models
 
-### reference  paper info
+### Reference  paper info
 This is the open source evaluation code base of our paper:
 
 **Interacting with Soli: Exploring Fine-Grained Dynamic Gesture Recognition
@@ -18,7 +18,7 @@ Saiwen Wang, Jie Song, Jamie Lien, Poupyrev Ivan, Otmar Hilliges <br />
 ## Step1: Model training base on soli dataset
 Run the paper and training code based on Google soli dataset
 
-###  install python env  
+###  Install python env  
  install python3.6 env with python package "torch matplotlib h5py" 
 
 ### Data loading and preprocessing
@@ -74,9 +74,9 @@ For each run, a folder named by date and time will be created with a log file co
 
 ## Step2: Gesture data acquisition based on TI board（Quite difficult）
 Based on the data set collected by hardware, learn how to collect and label data
-### Buy board and board software and hardware configuration
+### Buy board and board software and hardware configuration（Quite difficult）
 read [evb/ti-board.md](evb/ti-board.md) you need buy board,then config hardware and software，There will be many problems in software and hardware configuration. Please refer to the official documents
-### write code to save mmware studio data
+### Write code to save mmware studio data（Quite difficult）
 Accessing the Ti development board through TCP and receiving the data collected, you can use Python code, and then you can directly preprocess the data
 ### Data preprocessing
 read [data_preprocessing.md](preprocessing)
