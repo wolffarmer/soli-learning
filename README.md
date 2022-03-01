@@ -74,15 +74,15 @@ For each run, a folder named by date and time will be created with a log file co
 
 ## Step2: Gesture data acquisition based on TI board
 Based on the data set collected by hardware, learn how to collect and label data
-- To be updated
+- read evb/ti-board.md you need buy board,then config hardware and software，There will be many problems in software and hardware configuration. Please refer to the official documents
 
 ## Step3: Model training base on TI dataset
 Replace the soli data set in the first step with the data set collected in the second step to train the offline AI model
-- To be updated
+- Data can be collected according to the gestures defined by soli. It is recommended that at least 10 people be involved
 
 ## Step4: Real time gesture detection
 Realization of real-time detection system on PC based on Ti board dataset
-- To be updated
+- Read the data of mmware studio in real time through python, preprocess the data, and then conduct model reasoning. You can display the gesture recognition results according to the log data, or draw your own UI to display the gesture recognition results
 
 ## Reference items
 - https://github.com/sholevs66/Deep-Soli---Hand-Gesture-recognition
