@@ -2,7 +2,8 @@
 origin code  dataset is using dataset base on soli hardware.
 we try to use mmware Ti-board to generate dataset for gesture-recognition.
 
-## ti board-info 
+## Ti board-info 
+Need to buy ti board ad follows
 ### 开发板
 #### 毫米波评估板（两种型号，我们之前选的是第一种）
 【淘宝】https://m.tb.cn/h.fmUhXX2?tk=ECWQ249pBQa「IWR6843ISK-ODS IWR6843ISK 智能毫米波顶部检测传感器 TI原装」
@@ -22,5 +23,5 @@ we try to use mmware Ti-board to generate dataset for gesture-recognition.
 - 原理介绍
 https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1646116326243&ref_url=https%253A%252F%252Fwww.google.com%252F
 
-## evb cfg
+## Board Software and hardware environment configuration
 read evb_cfg.md
