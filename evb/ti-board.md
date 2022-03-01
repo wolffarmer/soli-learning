@@ -19,11 +19,8 @@ we try to use mmware Ti-board to generate dataset for gesture-recognition.
 - 开发工具：
 * https://www.ti.com.cn/tool/cn/MMWAVE-STUDIO
 * https://www.ti.com.cn/cn/lit/ug/spruij4a/spruij4a.pdf?ts=1646116432832&ref_url=https%253A%252F%252Fwww.ti.com.cn%252Ftool%252Fcn%252FMMWAVE-STUDIO
-- 参数解释
+- 原理介绍
 https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1646116326243&ref_url=https%253A%252F%252Fwww.google.com%252F
 
 ## evb cfg
 read evb_cfg.md
-## build dataset
-
-### labels
