@@ -24,4 +24,6 @@ Need to buy ti board ad follows
 https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1646116326243&ref_url=https%253A%252F%252Fwww.google.com%252F
 
 ## Board Software and hardware environment configuration
-read evb_cfg.md
+read [evb_cfg.md](evb_cfg.md)
+## Data preprocessing
+read [data_preprocessing.md](data_preprocessing.md)
