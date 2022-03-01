@@ -1,6 +1,10 @@
 # Introduction
 This paper introduces gesture recognition based on development board
 The soli data set is already the data set after preprocessing. The data of Ti development board needs to be preprocessed by itself
+
+## The original signal is processed into a 2D Doppler image
+2D doppler just like a picture，reference code [fmcw_2d_doppler.py](fmcw_2d_doppler.py), 
+
 ## Delete DC operation
 The original Rd image has a lot of static clutter. It is necessary to separately collect the RD image without hand action scene as the background to obtain the maximum value in the data. 
 The subsequent Rd image needs to subtract the maximum value, so as to achieve the effect of removing static clutter
