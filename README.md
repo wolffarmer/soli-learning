@@ -72,13 +72,13 @@ For each run, a folder named by date and time will be created with a log file co
 
 ![Alt text](acc_epochs.png?raw=true "Title")
 
-## Step2: Gesture data acquisition based on TI board
+## Step2: Gesture data acquisition based on TI board（Quite difficult）
 Based on the data set collected by hardware, learn how to collect and label data
 - read evb/ti-board.md you need buy board,then config hardware and software，There will be many problems in software and hardware configuration. Please refer to the official documents
-
+- Data can be collected according to the gestures defined by soli. It is recommended that at least 10 people be involved
 ## Step3: Model training base on TI dataset
 Replace the soli data set in the first step with the data set collected in the second step to train the offline AI model
-- Data can be collected according to the gestures defined by soli. It is recommended that at least 10 people be involved
+- Replacement dataset and data preprocessing method，There is basically no need to modify other places
 
 ## Step4: Real time gesture detection
 Realization of real-time detection system on PC based on Ti board dataset
