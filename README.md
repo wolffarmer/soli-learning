@@ -76,7 +76,7 @@ For each run, a folder named by date and time will be created with a log file co
 Based on the data set collected by hardware, learn how to collect and label data
 ### Buy board and board software and hardware configuration（Quite difficult）
 read [evb/ti-board.md](evb/ti-board.md) you need buy board,then config hardware and software，There will be many problems in software and hardware configuration. Please refer to the official documents
-### Write code to save mmware studio data（Quite difficult）
+### Write code to get data with mmware studio（Quite difficult）
 Accessing the Ti development board through TCP and receiving the data collected, you can use Python code, and then you can directly preprocess the data
 ### Data preprocessing
 read [evb/data_preprocessing.md](evb/preprocessing)
