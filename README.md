@@ -79,7 +79,7 @@ read [evb/ti-board.md](evb/ti-board.md) you need buy board,then config hardware 
 ### Write code to save mmware studio data（Quite difficult）
 Accessing the Ti development board through TCP and receiving the data collected, you can use Python code, and then you can directly preprocess the data
 ### Data preprocessing
-read [data_preprocessing.md](preprocessing)
+read [evb/data_preprocessing.md](evb/preprocessing)
 ### Generate Ti-dataset 
 Data can be collected according to the gestures defined by soli. It is recommended that at least 10 people be involved
 
