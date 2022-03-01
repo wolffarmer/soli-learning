@@ -17,5 +17,5 @@ After removing the static clutter, the RD diagram will be very clean. At this ti
 it will be found that there are still many change points in the data. At this time, 
 it is necessary to sort the data in the data, only retain the maximum 10 (configurable) values, and clear the other values. 
 The goal is to let the data learn the key points and change trend information
-## save RD data
+## Save RD data
 Save each frame of RD diagram to a file for subsequent AI model training
