@@ -1,0 +1,31 @@
+Hi. My name is Ken Sy Su. And I'm an applications engineer with our millimeter wave sensor group at Texas Instruments. This video will provide an overview of the millimeter wave sensing estimator that can be accessed at the link below. 
+
+The goal of the millimeter wave sensing estimator is to simplify radar theory by providing an easy-to-use, real-time calculator that estimates a chirp configuration based on user inputs. Error checking for out-of-bounds inputs and out-of-bounds device capabilities are also available in the tool. 
+
+The estimator is split into three sections-- Assumptions and Inputs, Outputs and Chirp Design, and the output console. The Assumptions and Inputs section allows you to experiment with different parameters to design a chirp that fits your application. 
+
+At the top, select a preset to set the parameters to a default starting point. Short Range Default provides parameters that reflect a chirp configuration based on a short-range, high-resolution application that can be used to detect people. 
+
+On the other hand, Long Range Default provides a chirp configuration based on a long-range application that can typically be used to detect a vehicle, such as a car. 
+
+Now that a present is chosen, the following sections allow the ability to fine-tune the parameters. Within Device Specific Parameters, select the appropriate millimeter wave sensor and the number of active transmit and receive antennas. For Board Specific Parameters, enter the transmit and receive gain for the antennas on your PCB. 
+
+Please note that the transmit and receive gain for an antennas on TI's millimeter wave EVMs are both 8 decibels. Regulatory restrictions allow the ability to adjust the frequency range, maximum bandwidth, and transmit power based on a local area that the sensor will deploy. 
+
+The Scene Parameters allow you to specify the typical scene the chirp should detect. TI's millimeter wave sensors are very configurable and can span various applications. In order to provide this flexibility, some parameters create trade-offs. For example, the maximum detectable range will limit the range resolution. For more details about each specific parameter and these trade-offs, mouse over the parameter to see a pop-up description or refer to the user guide located in the Help section. 
+
+Next, the Additional Parameters section takes into account the additional noise and signal loss that occur in real-world operation. The default values are typically a good start for most applications. The buttons below provide the capability to reset the inputs to default values, and also save the current configuration to load them back into the estimator for future use. 
+
+Now that the parameters are configured, refer to the Outputs and Chirp Design section located in the top right for the results. At the top of the Detectable Object Range, you can see the calculated maximum range of detection for the selected typical detectable object. Also to the right is a minimum RCS, or Radar Cross-Section, detectable at the maximum range. 
+
+The minimum detectable RCS defines how well an object can be detected with radar and takes into consideration the factors that affect the radar cross-section. These factors include the size of the object, material composition, and angle that the radar signal reflects off the target. 
+
+Below are the Chirp Design Parameters that specify the chirp configuration to work in the specified scene. After it is calculated here, the chirp can be configured on the device through the use of the millimeter wave SDK. Please note that these parameters only specify the front-end configuration parameters. Additional processing may be required to achieve the scene parameters. 
+
+For descriptions on each of these parameters, remember to mouse over each one to see a pop-up description or refer to the user guide located in the Help section. 
+
+At the bottom, there is an output console that provides real-time feedback based on the inputs. In addition to highlighting out-of-bounds parameters, it also provides an explanation of the errors and helpful tips on how to adjust the inputs. 
+
+For example, when I change Frequency Range and Maximum Bandwidth to these values, the console provides feedback on how to fix the error. A quick start guide, the release notes, and known issues are available in the README from the Help section located above. 
+
+This concludes the millimeter wave sensing estimator video. If you are interested in the radar theory behind the equations using this tool, watch the Introduction to Millimeter Wave Sensing-- FMCW Radars video series available at the link below. To learn more about the millimeter wave sensors, please visit the following resources. Thanks for watching. 

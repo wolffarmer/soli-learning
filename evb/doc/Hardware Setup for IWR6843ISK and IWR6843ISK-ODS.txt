@@ -1,0 +1,43 @@
+Hello. And welcome to the Hardware Setup of the IWR6843ISK and IWR6843ISK-ODS Antenna Modules for Flashing and Functional Modes. We will first cover flash mode, before moving onto functional mode later in this video. This guide is intended for users with an IWR6843ISK or IWR6843ISK-ODS EVM. This video guide will walk through setting up the board into flashing and functional modes when the EVM is used in modular standalone mode. This setup does not require the use of the mmWaveICBoost carrier board. 
+
+This setup will involve these four main steps. Please follow along closely and feel free to pause the video at anytime to check that the instructions have been followed correctly. 
+
+The necessary hardware for this setup is an IWR6843ISK or IWR6843ISK-ODS antenna module and a micro USB cable. Please note that a JTAG debug can only be done using the mmWaveICBoost carrier card. 
+
+To use the IWR6843ISK or IWR6843ISK-ODS antenna module in standalone modular mode, the switches on the EVM need to be set as shown in this image. For the switches labeled not applicable, I usually set them to off for convenience. Pause the video and ensure that all switches are correctly set. Shown in the image is the IWR6843ISK. The IWR6843ISK-ODS looks slightly different, but will have the same switch configuration as shown in the image. 
+
+Next, connect the micro USB cable to the EVM at the connector shown in the image, then to a PC. Note that a separate power supply is not needed, as the EVM gets power from the USB connection itself. LEDs indicated on the EVM image should turn on when connected to USB. 
+
+In order to enable flashing mode on the EVM, ensure that the SOP switches are set as shown in the table below. Check your EVM with the image to ensure that the device has been placed in flashing mode. To ensure that the correct SOP mode is latched, once power has been applied power cycle the device by pressing and releasing the RST switch identified in the image. The green LED near S3 will toggle off and on when the switch depressed and released. The LED will toggle regardless of the SOP state as the reset is needed to refresh the SOP state. It is important to note that after any SOP mode jumpers are changed, the RST switch should always be toggled to ensure a reliable boot upstate. The device is now ready for flashing. 
+
+Now that the devices in flashing mode, it can be flashed. In order to flash the device, make sure that the EVM is already set up for flashing mode. In addition to having a PC running Windows 7 or 10 with the UniFlash tool downloaded and installed, the UniFlash tool can be installed on the TI Resource Explorer. 
+
+First, the COM port numbers must be obtained. With the EVM powered and connected to the PC via micro USB open up the Device Manager. Notice that the EVM exports to virtual COM ports, as indicated in the Port section of the Device Manager. Make note of the correct COM port number for each of the two ports for use later. The actual COM port numbers for your specific device may be different than the ports indicated in the image. 
+
+In the reference image, COM ports are color coded according to their functionality. Use the below table as a guide to the port naming and function in the Device Manager. If the COM ports do not appear as above, driver installation is required. Please install the appropriate driver on the TI Resource Explorer, restart your PC, and try again. 
+
+The second step in flashing the device is to load the binary image file using UniFlash. First, open the UniFlash tool using the Windows Start menu on your PC. Once UniFlash is open, go to the New Configuration section and locate and select IWR6843. Click Start to proceed when the selected device and connection match the image. 
+
+Next, click the Settings and Utilities tab. Under Setup, fill in the COM port text box with the port number corresponding to the enhanced COM port noted earlier. For example, according to the previous Device Manager screen image, COM1 should be replaced with COM25. 
+
+Following filling in the COM port, click the Program tab. For Meta Image 1, click on Browse and locate the binary image file to be flashed onto the device. After clicking OK, the name and size of the selected binary file should appear, while leaving Meta Image 2 through 4 blank. Note that the binary file to flash and its location is specified in the user's guide of each lab. 
+
+Next, power cycle the device by pressing and releasing the RST switch, as shown in the images. 
+
+Lastly, after the binary image file has been selected, the Load Image button is enabled. Click the Load Image button to flash the device. If flashing is successful, the UniFlash console will indicate SUCCESS, Program Load completed successfully. If there is an error while flashing, please pause the video and read through these common causes of flashing failure in order to correct the failure. 
+
+Need more help? Consult the UniFlash Quick Start Guide, or search for your issue or post a new question on the mmWave E2E forum. 
+
+Once the device has been flashed, it can now be set up for functional mode. This setup will involve these four main steps. Please follow along closely, and feel free to pause the video at any time to check that the instructions have been followed correctly. 
+
+The necessary hardware for the setup is an IWR6843ISK or IWR6843ISK-ODS Antenna Module and a micro USB cable. Please note that a JTAG debug can only be done using the mmWaveICBoost carrier card. 
+
+To use the IWR6843ISK or IWR6843ISK-ODS Antenna Module in standalone modular mode, , the switches on the EVM need to be set as shown in this image. Note that the switch configuration is different than in flashing mode and needs to be changed in order to be put into functional mode. For the switches labeled Not Applicable, I usually set them too Off for convenience. 
+
+Pause the video, and ensure that all switches are correctly set. Shown in the image is the IWR6843ISK. The IWR6843ISK-ODS looks slightly different, but will have the same switch configuration as shown in the image. 
+
+Next, connect the micro USB cable to the EVM at the connector shown in the image then to a PC. Note that a separate power supply is not needed as the EVM gets power from the USB connection itself. LED indicated on the EVM image should turn on when connected to USB. Note that this step may be skipped if the micro USB cable is still connected from the flashing mode setup. 
+
+Ensure functional mode is enabled by setting the SOP switches on the front of the device as shown in the table below. To ensure that the correct SOP mode is latched, once power has been applied, power cycle the device by pressing and releasing the RST switch identified in the image. The green LED near S3 will toggle Off and On when the switch is depressed and released. The LED will toggle regardless of the SOP state, as the reset is needed to refresh the SOP state. It is important to note that after any SOP mode jumpers are changed, the RST switch should always be toggled to ensure a reliable boot upstate. The device is now in functional mode. 
+
+Need more help? Consult the mmWaveICBoost and Antenna Module User's Guide or search for your issue or post a new question on the mmWave E2E forum. 
